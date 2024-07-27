@@ -28,7 +28,8 @@ function SingleBox({ value=0, row, col, onChange }) {
         
         const num = Number(e.target.value)
         if(num>0){
-            setNumber(e.target.value)
+            setNumber(num)
+            onChange(row, col, Number(e.key));
         }
     }
 
