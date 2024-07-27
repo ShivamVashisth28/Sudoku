@@ -83,7 +83,7 @@ function Game() {
 
         setNewBoard(value)
         setSolution(sol)
-        console.log(sol)
+        // console.log(sol)
         setDiffulty(difficulty)
         setLoading(false)
     }
