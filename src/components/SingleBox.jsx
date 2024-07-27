@@ -25,7 +25,11 @@ function SingleBox({ value=0, row, col, onChange }) {
     }
 
     const handleOnChange = (e) => {
-        console.log(e.target.value)
+        
+        const num = Number(e.target.value)
+        if(num>0){
+            setNumber(e.target.value)
+        }
     }
 
     return (
